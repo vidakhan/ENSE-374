@@ -1,68 +1,115 @@
-<!DOCTYPE html>
-<html>
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="login_page.css" />
-    <title>Login Page</title>
-    <style>
-    th 
-    { 
-      text-align: left;
-    }
-  </style>
-  
+<!DOCTYPE html> 
+<html> 
+    <head> 
+      <center>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="To do Prototype.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-
-
- <p style="border : 2.5px double  #06060e ; "> 
-
+        
  
-   <body style="background-color:thistle;">
-   
-    <div class="login">
-    <h1>Login</h1>
-      <table>
+    
+        <style type="text/css">
+          .err_msg{
+      
+             color:pink;
+             text-decoration:underline;
+           }
+        </style>
+                
+        <style>
+            #myDiv {
+                height: 657px;
+                width: 1250px;
+                background: 
+url("") no-repeat;
+                background-size: 1250px 657px;
 
-         <form action="/action_page.php">
+                --background: url(path/images/backgroundimage.jpg) no-repeat;
+                  
+            }
+        </style>
+        
+    </head>
+      
+    <body> 
+        <div id= "myDiv">
+            <body style="background-color:whitesmoke;">
+                <h1> To do Prototype</h1>
+          <div class="login">
+        
+          <h1>Login</h1>
+          <form id="Login" method="post"> 
 
-  
-     <p>
-        <tr>
-          <th>User Name:</th>
-          <td> <input type="text" name="user-name" value=""><br> </td>
+            <table>     
+              <form action="/action_page.php"></form>
+           <p>
+              <tr>
+                <tr><td></td><td><label id="uname_msg" class="err_msg"></label></td></tr>
+                <tr><td>Username: </td><td> <input type="text" name="uname" size="30" /></td></tr>
+             
+                     <tr><td></td><td><label id="pswd_msg" class="err_msg"></label></td></tr>
+                <tr><td>Password: </td><td> <input type="password" name="pswd" size="30" /></td></tr>
         </tr>
-  <tr>
+       </tr> 
+       </div>
+      
+      </table>
+          <br>
+          <tr>
+            <input type="button" value="Login" onclick="LoginForm()" /> 
+            <input type="reset" value ="Reset" onclick="ResetForm()"/>
+          </tr>
+          </br>
+          <br>
+          <div id= "Login">
+         
+        
+        </div>
+        <div class="signup">
+            <h1>Sign up</h1>
+         
+            <form id="SignUp" method="post">
+            <table>
+              <form action="/action_page.php"></form>
+            
+              <tr><td></td><td><label id="email_msg" class="err_msg"></label></td></tr>
+              <tr><td>Email: </td><td> <input type="text" name="email" size="30"  /></td></tr>
+            
+                   <tr><td></td><td><label id="pswd_msg" class="err_msg"></label></td></tr>
+              <tr><td>Password: </td><td> <input type="password" name="pswd" size="30" /></td></tr>  
+            
+                    <tr><td></td><td><label id="authen_msg" class="err_msg"></label></td></tr>
+              <tr><td>Authentication: </td><td> <input type="password" name="authen" size="30" /></td></tr>  
+              <tr>
+              <tr>
+              </div>
+            </table>
+              <br>
+              <tr>
+                <input type="button" value="SignUp" onclick="SignUpForm()" />
+                <input type="reset"  value="Reset" onclick="ResetForm()"/>
+              </tr>
+            </br>
+            <div id= "SignUp"></div>
+            </tr>
+            </form>
+           
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-  <tr>
-    <th>Password:</th>
-    <td> <input type="password" name="password" value=""><br> </td>
-  </tr>
- </tr> 
- </div>
+          <tr>
+         
+      </tr>
+    </p>
+      
 
-</table>
-   
-    <br>
-    <tr>
-     <input type="button" value="Login" />
-     <input type="Reset" value="Reset"  />
-      </p>
-    </tr>
-    </br>
-    <h1>Don't have an account?</h1>
-    <div id= "signup">
+              <br />
+    </article>
+      
+                 </form>
           
-      <button type="submit" style="background-color: white;
-      padding: 6px 20px;
-      border: 3px solid transparent;
-      transition: 0.6s ease;"><a ></a></button>
-    </div>
-</p>
-  
-  
-  
-    </form>
-  </div>
-</body>
+        
+    </body> 
+</center>
 </html>
